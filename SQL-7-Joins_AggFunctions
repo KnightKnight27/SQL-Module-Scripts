@@ -1,0 +1,23 @@
+SELECT * FROM sakila.rental;
+SELECT * FROM employees;
+select * from departments;
+select * from employees natural join departments;
+select * from film;
+-- language_id , last_update
+select * from language;
+-- langauge_id, last_update
+
+-- both the. colums were getting check 
+-- film.language_id = langauge.language_id and film.last_update = langauge.last_update
+SELECT * FROM sakila.film;
+select avg(rental_rate) from film;
+
+
+-- print avg rental rate for movies released in 2006 
+-- lexicraphically maximum
+-- alphabetical maximum
+select * from film;
+select min(title) from film;
+
+
+select count(student_id) from students where batch_id is null;
